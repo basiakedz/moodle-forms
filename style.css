@@ -7,14 +7,11 @@ body {
   background-image: url(/background.jpg);
   background-size: cover;
   font-weight: 800;
+  font-family: "Kavoon", serif;
 }
 
 label {
   display: block;
-}
-
-input {
-  background-color: red;
 }
 
 .border {
@@ -23,6 +20,17 @@ input {
 
 .form-container {
   background-color: #c0aa94;
+  position: relative;
+  z-index: 2;
+}
+
+.form-control {
+  font-family: serif;
+}
+
+.form-control:focus {
+  outline: 2px solid #d9d9d9;
+  box-shadow: none;
 }
 
 .btn-primary {
@@ -36,6 +44,15 @@ input {
   background-color: #890311;
 }
 
+.btn-primary:active {
+  background-color: #890311 !important;
+}
+
+.btn-primary:focus {
+  background-color: #b90113;
+  box-shadow: 0 0 10px 2px #890311;
+}
+
 .btn-secondary {
   background-color: #d9d9d9;
   color: black;
@@ -46,23 +63,40 @@ input {
 
 .btn-secondary:hover {
   background-color: #c5c4c4;
+  color: black;
+}
+
+.btn-secondary:active {
+  background-color: #c5c4c4 !important;
+  color: black !important;
+}
+
+.btn-secondary:focus {
+  background-color: #c5c4c4;
+  box-shadow: 0 0 10px 2px #6c757d;
+  color: black;
 }
 
 .custom-required-text {
   font-size: 12px;
 }
 
-.form-container {
-  position: relative;
-  z-index: 2; /* Set a higher z-index for the form container */
+.error-message {
+  color: #b90113;
+  display: block;
+  font-size: 12px;
+}
+
+.form__error-input {
+  outline: 2px solid #b90113;
 }
 
 .snowflake {
   position: fixed;
-  width: 30px; /* Adjust the width of the snowflake image */
-  height: 30px; /* Adjust the height of the snowflake image */
+  width: 30px;
+  height: 30px;
   user-select: none;
-  z-index: 1; /* Set a lower z-index to place snow behind the form */
+  z-index: 1;
   animation: fall linear infinite;
 }
 
