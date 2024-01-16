@@ -4,7 +4,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/background.jpg);
+  background-image: url(/form1/background.jpg);
   background-size: cover;
   font-weight: 800;
   font-family: "Kavoon", serif;
