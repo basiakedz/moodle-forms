@@ -92,8 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const cancelButton = document.querySelector(".btn-secondary");
   cancelButton.addEventListener("click", function () {
-    form.reset();
-    clearErrorMessages();
+    window.location.href = "https://testing.muras.eu/moodle403/login/index.php";
   });
 
   function displayErrorMessage(message, fieldId) {
@@ -107,15 +106,5 @@ document.addEventListener("DOMContentLoaded", function () {
     fieldEl.querySelector("input").classList.add("is-invalid");
 
     fieldEl.appendChild(errorElement);
-  }
-
-  function clearErrorMessages() {
-    const errorMessages = document.querySelectorAll(".error-message");
-    errorMessages.forEach((errorMessage) => errorMessage.remove());
-
-    const invalidInputs = document.querySelectorAll(".is-invalid");
-    invalidInputs.forEach((invalidInput) =>
-      invalidInput.classList.remove("is-invalid")
-    );
   }
 });
