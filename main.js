@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       invalidInputEl.classList.remove("is-invalid");
     }
 
-    const userName = formData.get("userName");
+    const userName = formData.get("username");
 
     if (!userName) {
       displayErrorMessage("This field is required.", "user-name-field");
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
 
-    const emailAgain = formData.get("emailAgain");
+    const emailAgain = formData.get("email2");
 
     if (!emailAgain) {
       displayErrorMessage("This field is required.", "email-again-field");
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
 
-    const firstName = formData.get("firstName");
+    const firstName = formData.get("firstname");
 
     if (!firstName) {
       displayErrorMessage("This field is required.", "first-name-field");
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
       displayErrorMessage("Only letters can be used.", "first-name-field");
     }
 
-    const lastName = formData.get("lastName");
+    const lastName = formData.get("lastname");
 
     if (!lastName) {
       displayErrorMessage("This field is required.", "last-name-field");
