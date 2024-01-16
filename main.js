@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     for (const invalidInputEl of Array.from(
-      document.getElementsByClassName("form__error-input")
+      document.getElementsByClassName("is-invalid")
     )) {
-      invalidInputEl.classList.remove("form__error-input");
+      invalidInputEl.classList.remove("is-invalid");
     }
 
     const userName = formData.get("userName");
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const fieldEl = document.getElementById(fieldId);
 
-    fieldEl.querySelector("input").classList.add("form__error-input");
+    fieldEl.querySelector("input").classList.add("is-invalid");
 
     fieldEl.appendChild(errorElement);
   }
@@ -113,9 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const errorMessages = document.querySelectorAll(".error-message");
     errorMessages.forEach((errorMessage) => errorMessage.remove());
 
-    const invalidInputs = document.querySelectorAll(".form__error-input");
+    const invalidInputs = document.querySelectorAll(".is-invalid");
     invalidInputs.forEach((invalidInput) =>
-      invalidInput.classList.remove("form__error-input")
+      invalidInput.classList.remove("is-invalid")
     );
   }
 });

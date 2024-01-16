@@ -8,6 +8,7 @@ body {
   background-size: cover;
   font-weight: 800;
   font-family: "Kavoon", serif;
+  color: #111827;
 }
 
 label {
@@ -22,7 +23,7 @@ label {
   background-color: #c0aa94;
   position: relative;
   z-index: 2;
-  box-shadow: 15px 15px 10px 0px #00000059;
+  box-shadow: 15px 15px 10px 0px #11182759;
 }
 
 .form {
@@ -40,9 +41,9 @@ label {
 }
 
 .form-control:focus {
-  outline: 2px solid #d9d9d9;
   box-shadow: none;
-  border-color: transparent;
+  border-color: #6c757d;
+  border-width: 2px;
 }
 
 .btn-primary {
@@ -68,7 +69,7 @@ label {
 
 .btn-secondary {
   background-color: #d9d9d9;
-  color: black;
+  color: #111827;
   font-size: 14px;
   font-weight: 800;
   border: none;
@@ -76,18 +77,18 @@ label {
 
 .btn-secondary:hover {
   background-color: #c5c4c4;
-  color: black;
+  color: #111827;
 }
 
 .btn-secondary:active {
   background-color: #c5c4c4 !important;
-  color: black !important;
+  color: #111827 !important;
 }
 
 .btn-secondary:focus {
   background-color: #c5c4c4;
   box-shadow: 0 0 10px 2px #6c757d;
-  color: black;
+  color: #111827;
 }
 
 .custom-required-text {
@@ -100,8 +101,9 @@ label {
   font-size: 12px;
 }
 
-.form__error-input {
-  outline: 2px solid #b90113;
+.is-invalid {
+  border-color: #b90113 !important;
+  border-width: 2px;
 }
 
 .snowflake {
