@@ -29,6 +29,21 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
 
+    const password = formData.get("password");
+
+    if (!password) {
+      displayErrorMessage("This field is required.", "password-field");
+    } else if (
+      !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#?!@$%^&*-])[A-Za-z\d#?!@$%^&*-]{8,}$/.test(
+        password
+      )
+    ) {
+      displayErrorMessage(
+        "1. Includes at least 8 characters.<br>2. At least 1 uppercase.<br>3. At least 1 lowercase.<br>4. At least one digit.<br>5. At least 1 special character.",
+        "password-field"
+      );
+    }
+
     const email = formData.get("email");
 
     if (!email) {
@@ -37,35 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
       displayErrorMessage(
         "Enter email address in format: yourname@example.com",
         "email-field"
-      );
-    }
-
-    const firstName = formData.get("firstName");
-
-    if (!firstName) {
-      displayErrorMessage("This field is required.", "first-name-field");
-    } else if (!/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(firstName)) {
-      displayErrorMessage("Only letters can be used.", "first-name-field");
-    }
-
-    const city = formData.get("city");
-
-    if (!city) {
-      displayErrorMessage("This field is required.", "city-field");
-    } else if (!/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(city)) {
-      displayErrorMessage("Only letters can be used.", "city-field");
-    }
-
-    const password = formData.get("password");
-
-    if (!password) {
-      displayErrorMessage("This field is required.", "password-field");
-    } else if (
-      !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)
-    ) {
-      displayErrorMessage(
-        "1. At least 8 characters.<br>2. Contains a mix of uppercase and lowercase.<br>3. Includes at least one digit (0-9).",
-        "password-field"
       );
     }
 
@@ -87,20 +73,20 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
 
+    const firstName = formData.get("firstName");
+
+    if (!firstName) {
+      displayErrorMessage("This field is required.", "first-name-field");
+    } else if (!/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(firstName)) {
+      displayErrorMessage("Only letters can be used.", "first-name-field");
+    }
+
     const lastName = formData.get("lastName");
 
     if (!lastName) {
       displayErrorMessage("This field is required.", "last-name-field");
     } else if (!/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(lastName)) {
       displayErrorMessage("Only letters can be used.", "last-name-field");
-    }
-
-    const country = formData.get("country");
-
-    if (!country) {
-      displayErrorMessage("This field is required.", "country-field");
-    } else if (!/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(country)) {
-      displayErrorMessage("Only letters can be used.", "country-field");
     }
   });
 

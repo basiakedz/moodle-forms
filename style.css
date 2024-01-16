@@ -22,6 +22,17 @@ label {
   background-color: #c0aa94;
   position: relative;
   z-index: 2;
+  box-shadow: 15px 15px 10px 0px #00000059;
+}
+
+.form {
+  max-height: 80vh;
+}
+
+.custom-inputs-container {
+  overflow-y: auto;
+  max-height: 60vh;
+  overflow-x: hidden;
 }
 
 .form-control {
@@ -31,6 +42,7 @@ label {
 .form-control:focus {
   outline: 2px solid #d9d9d9;
   box-shadow: none;
+  border-color: transparent;
 }
 
 .btn-primary {
@@ -38,6 +50,7 @@ label {
   font-size: 14px;
   font-weight: 800;
   border: none;
+  height: 38px;
 }
 
 .btn-primary:hover {
@@ -107,7 +120,9 @@ label {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-image: url(/bg-mobile.jpg);
+  .custom-inputs-container {
+    overflow-y: auto;
+    max-height: 60vh;
+    overflow-x: hidden;
   }
 }
