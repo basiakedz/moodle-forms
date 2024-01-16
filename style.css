@@ -120,9 +120,25 @@ label {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-size: auto;
+  }
+
+  .form-container {
+    max-width: 70%;
+  }
+
   .custom-inputs-container {
     overflow-y: auto;
     max-height: 60vh;
     overflow-x: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .custom-button-container,
+  .custom-required-text {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
