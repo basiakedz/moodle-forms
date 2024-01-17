@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       displayErrorMessage("This field is required.", "user-name-field");
     } else if (!/^[A-Za-z][A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ0-9]{4,}$/.test(userName)) {
       displayErrorMessage(
-        "1. At least 5 characters and start with a letter.<br>2. Only letters and numbers can be used.",
+        "1. At least 5 characters.<br>2. Start with a letter.<br>3. Only letters and numbers can be used.",
         "user-name-field"
       );
     }
@@ -87,6 +87,18 @@ document.addEventListener("DOMContentLoaded", function () {
       displayErrorMessage("This field is required.", "last-name-field");
     } else if (!/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(lastName)) {
       displayErrorMessage("Only letters can be used.", "last-name-field");
+    }
+
+    const city = formData.get("city");
+
+    if (city && !/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(city)) {
+      displayErrorMessage("Only letters can be used.", "city-field");
+    }
+
+    const country = formData.get("country");
+
+    if (country && !/^[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(country)) {
+      displayErrorMessage("Only letters can be used.", "country-field");
     }
   });
 
