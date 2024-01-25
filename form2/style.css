@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e8f6;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #282828;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.custom-card {
+  margin: 10rem 15rem;
+  flex-direction: row;
+  box-shadow: 8px 8px 4px 4px rgba(81, 97, 157, 0.24);
+  border: 2px solid rgba(81, 97, 157, 0.24);
+}
+
+.custom-img-container {
+  width: 100%;
+}
+
+.custom-img {
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.custom-inputs-container {
+  overflow-y: scroll;
+  max-height: 65vh;
+}
+
+.form-control {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #51619d;
+  border-width: 2px;
+}
+
+.btn-primary {
+  background-color: #6878ac;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  height: 38px;
+}
+
+.btn-primary:hover {
+  background-color: #30448b;
+}
+
+.btn-primary:active {
+  background-color: #6878ac !important;
+}
+
+.btn-primary:focus {
+  background-color: #6878ac !important;
+  box-shadow: 0 0 10px 2px #30448b;
+}
+
+.btn-secondary {
+  background-color: #d9d9d9;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #c5c4c4;
+  color: #282828;
+}
+
+.btn-secondary:active {
+  background-color: #c5c4c4 !important;
+  color: #282828 !important;
+}
+
+.btn-secondary:focus {
+  background-color: #c5c4c4;
+  box-shadow: 0 0 10px 2px #6c757d;
+  color: #282828;
+}
+
+.custom-required-text {
+  font-size: 12px;
+}
+
+.error-message {
+  color: #f98012;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.is-invalid {
+  border-color: #f98012 !important;
+  border-width: 2px;
+  background-image: url(/form2/exclamation-orange.svg) !important;
+}
+
