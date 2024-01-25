@@ -111,3 +111,30 @@ h1 {
   background-image: url(/form2/exclamation-orange.svg) !important;
 }
 
+@media (max-width: 768px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .custom-img-container {
+    display: none;
+  }
+
+  .custom-card {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0 !important;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .custom-inputs-container {
+    overflow-x: auto;
+  }
+
+  .card-body {
+    border-radius: 0 !important;
+  }
+}
