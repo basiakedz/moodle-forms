@@ -1,21 +1,42 @@
 body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #e4e8f6;
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   color: #282828;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-weight: 700;
 }
 
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 700;
+}
+
+.custom-img-mobile {
+  display: none;
+  width: 100%;
+}
+
 .custom-card {
-  margin: 10rem 15rem;
+  margin: 10rem 10rem;
   flex-direction: row;
+  max-width: 60%;
+  max-height: 85%;
+  height: 100%;
   box-shadow: 8px 8px 4px 4px rgba(81, 97, 157, 0.24);
   border: 2px solid rgba(81, 97, 157, 0.24);
 }
@@ -32,10 +53,15 @@ h1 {
 
 .card-body {
   width: 100%;
+  padding: 0;
+}
+
+.form-container {
+  height: 100%;
 }
 
 .custom-inputs-container {
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 65vh;
 }
 
@@ -50,12 +76,18 @@ h1 {
   border-width: 2px;
 }
 
+.custom-button-container {
+  flex-wrap: wrap;
+}
+
 .btn-primary {
   background-color: #6878ac;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   border: none;
   height: 38px;
+  display: block;
+  width: 100%;
 }
 
 .btn-primary:hover {
@@ -72,37 +104,43 @@ h1 {
 }
 
 .btn-secondary {
-  background-color: #d9d9d9;
-  color: #282828;
-  font-size: 14px;
+  background-color: transparent;
+  color: #6878ac;
+  font-size: 16px;
   font-weight: 700;
   border: none;
+  display: block;
+  width: 100%;
 }
 
 .btn-secondary:hover {
-  background-color: #c5c4c4;
-  color: #282828;
+  background-color: transparent;
+  color: #30448b;
+  text-decoration: underline;
 }
 
 .btn-secondary:active {
-  background-color: #c5c4c4 !important;
-  color: #282828 !important;
+  background-color: transparent !important;
+  color: #30448b !important;
+  text-decoration: underline !important;
 }
 
 .btn-secondary:focus {
-  background-color: #c5c4c4;
   box-shadow: 0 0 10px 2px #6c757d;
-  color: #282828;
+  background-color: transparent;
+  color: #30448b;
+  text-decoration: underline;
 }
 
 .custom-required-text {
   font-size: 12px;
+  font-weight: 700;
 }
 
 .error-message {
   color: #f98012;
   font-size: 12px;
-  letter-spacing: 0.5px;
+  font-weight: 700;
 }
 
 .is-invalid {
@@ -111,18 +149,32 @@ h1 {
   background-image: url(/form2/exclamation-orange.svg) !important;
 }
 
-@media (max-width: 768px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
-
+@media (max-width: 1199.98px) {
   .custom-img-container {
     display: none;
   }
 
   .custom-card {
+    max-width: 40%;
+    max-height: 90%;
+  }
+
+  .custom-img-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .custom-card {
     margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
     box-shadow: none;
     border-radius: 0 !important;
     border: none;
@@ -130,11 +182,11 @@ h1 {
     overflow: hidden;
   }
 
-  .custom-inputs-container {
-    overflow-x: auto;
+  .card-body {
+    border-radius: 0 !important;
   }
 
-  .card-body {
+  .custom-img-mobile {
     border-radius: 0 !important;
   }
 }
