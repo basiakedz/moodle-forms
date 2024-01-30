@@ -4,70 +4,15 @@ body {
   color: #282828;
 }
 
-main {
-  width: 100%;
-  height: 100vh;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  font-weight: 700;
-}
-
-form {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-weight: 700;
-}
-
-.custom-img-mobile {
-  display: none;
-  width: 100%;
-}
-
 .custom-card {
-  margin: 10rem 10rem;
-  flex-direction: row;
-  max-width: 60%;
-  max-height: 85%;
-  height: 100%;
+  max-width: 55%;
+  max-height: 90%;
   box-shadow: 8px 8px 4px 4px rgba(81, 97, 157, 0.24);
   border: 2px solid rgba(81, 97, 157, 0.24);
 }
 
-.custom-img-container {
-  width: 100%;
-}
-
-.custom-img {
-  height: 100%;
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.card-body {
-  width: 100%;
-  padding: 0;
-}
-
-.form-container {
-  height: 100%;
-}
-
-.custom-inputs-container {
-  overflow-y: auto;
-  max-height: 65vh;
-}
-
 .form-control {
   font-family: "Open Sans", sans-serif;
-  font-weight: 500;
 }
 
 .form-control:focus {
@@ -76,18 +21,9 @@ label {
   border-width: 2px;
 }
 
-.custom-button-container {
-  flex-wrap: wrap;
-}
-
 .btn-primary {
   background-color: #6878ac;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
   height: 38px;
-  display: block;
-  width: 100%;
 }
 
 .btn-primary:hover {
@@ -106,11 +42,6 @@ label {
 .btn-secondary {
   background-color: transparent;
   color: #6878ac;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  display: block;
-  width: 100%;
 }
 
 .btn-secondary:hover {
@@ -134,7 +65,6 @@ label {
 
 .custom-required-text {
   font-size: 12px;
-  font-weight: 700;
 }
 
 .error-message {
@@ -149,41 +79,13 @@ label {
   background-image: url(/form2/exclamation-orange.svg) !important;
 }
 
-@media (max-width: 1199.98px) {
-  .custom-img-container {
-    display: none;
-  }
-
-  .custom-card {
-    max-width: 40%;
-    max-height: 90%;
-  }
-
-  .custom-img-mobile {
-    display: block;
-  }
-}
-
 @media (max-width: 575.98px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
-
   .custom-card {
-    margin: 0;
     max-width: 100%;
     max-height: 100%;
-    height: 100%;
     box-shadow: none;
     border-radius: 0 !important;
     border: none;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .card-body {
-    border-radius: 0 !important;
   }
 
   .custom-img-mobile {
