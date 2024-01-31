@@ -1,9 +1,4 @@
 body {
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url(/form1/background.jpg);
   background-size: cover;
   font-family: "Kavoon", "Georgia", serif;
@@ -12,28 +7,14 @@ body {
   color: #111827;
 }
 
-label {
-  display: block;
-}
-
-.border {
-  padding: 30px;
-}
-
 .form-container {
   background-color: #c0aa94;
-  position: relative;
-  z-index: 2;
   box-shadow: 15px 15px 10px 0px #11182759;
 }
 
-.form {
-  max-height: 80vh;
-}
-
 .custom-inputs-container {
-  overflow-y: auto;
   max-height: 60vh;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -51,7 +32,6 @@ label {
   background-color: #b90113;
   font-size: 14px;
   font-weight: 800;
-  border: none;
   height: 38px;
 }
 
@@ -73,7 +53,6 @@ label {
   color: #111827;
   font-size: 14px;
   font-weight: 800;
-  border: none;
 }
 
 .btn-secondary:hover {
@@ -100,6 +79,7 @@ label {
   color: #b90113;
   display: block;
   font-size: 12px;
+  letter-spacing: 1px !important;
 }
 
 .is-invalid {
@@ -132,9 +112,9 @@ label {
   }
 
   .custom-inputs-container {
-    overflow-y: auto;
     max-height: 60vh;
     overflow-x: hidden;
+    overflow-y: auto;
     padding-left: 16px;
     padding-right: 16px;
   }
