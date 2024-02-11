@@ -1,5 +1,5 @@
 body {
-  background-image: url(/form3/background.jpg);
+  background-image: url(/form3/img/background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -8,7 +8,7 @@ body {
 .glass-custom {
   background: rgba(66, 47, 71, 0.55);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -17,4 +17,108 @@ body {
 .img {
   width: 5rem;
   height: auto;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  top: -5px;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+input:placeholder-shown:not(:focus) ~ label {
+  top: 50%;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  top: 20px;
+}
+
+.btn-primary {
+  background-color: #6878ac;
+  height: 38px;
+}
+
+.btn-primary:hover {
+  background-color: #30448b;
+}
+
+.btn-primary:active {
+  background-color: #6878ac !important;
+}
+
+.btn-primary:focus {
+  background-color: #6878ac !important;
+  box-shadow: 0 0 10px 2px #30448b;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #6878ac;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.btn-secondary:active {
+  background-color: transparent !important;
+  color: #30448b !important;
+  text-decoration: underline !important;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 10px 2px #6c757d;
+  background-color: transparent;
+  color: #30448b;
+  text-decoration: underline;
+}
+
+.custom-required-text {
+  font-size: 12px;
+}
+
+.error-message {
+  color: #f98012;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.is-invalid {
+  border-color: #f98012 !important;
+  border-width: 2px;
+  background-image: url(/form3/img/exclamation-orange.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: 97% 50% !important;
+  background-size: 16px !important;
 }
