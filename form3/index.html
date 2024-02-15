@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Forms</title>
+    <title>Form3</title>
 
     <script src="/form3/main.js" defer></script>
 
@@ -34,24 +34,27 @@
                   <img
                     src="/form3/img/Moodle_Circle_M_Reversed_White_RGB.png"
                     alt="Moodle Logo"
-                    class="img"
+                    class="h-auto logo-custom"
                   />
-                  <h1 class="fw-bold my-5">New account</h1>
+                  <h1 class="fw-bold mt-5 mb-4">New account</h1>
                 </div>
 
                 <form
                   action=""
                   method="post"
                   novalidate
-                  class="overflow-y-auto"
+                  class="overflow-y-auto overflow-x-hidden"
                 >
-                  <div id="user-name-field" class="inputbox">
+                  <div
+                    id="user-name-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/user.svg"
                       alt="user icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_username"
@@ -59,7 +62,7 @@
                       name="username"
                       placeholder="Username"
                     />
-                    <label for="id_username" class="fw-bold"
+                    <label for="id_username" class="fw-bold position-absolute"
                       >Username<img
                         src="/form3/img/asterisk.svg"
                         alt="asterisk"
@@ -70,13 +73,16 @@
                     </label>
                   </div>
 
-                  <div id="password-field" class="inputbox">
+                  <div
+                    id="password-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/padlock.svg"
                       alt="padlock icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_password"
@@ -84,7 +90,9 @@
                       name="password"
                       placeholder="Password"
                     />
-                    <label for="id_password" class="fw-bold"
+                    <label
+                      for="id_password"
+                      class="fw-bold position-absolute w-100"
                       >Password<img
                         src="/form3/img/asterisk.svg"
                         alt="asterisk"
@@ -94,13 +102,16 @@
                     /></label>
                   </div>
 
-                  <div id="email-field" class="inputbox">
+                  <div
+                    id="email-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/envelope.svg"
                       alt="envelope icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_email"
@@ -108,7 +119,9 @@
                       name="email"
                       placeholder="Email address"
                     />
-                    <label for="id_email" class="fw-bold"
+                    <label
+                      for="id_email"
+                      class="fw-bold position-absolute w-100"
                       >Email address<img
                         src="/form3/img/asterisk.svg"
                         alt="asterisk"
@@ -118,13 +131,16 @@
                     /></label>
                   </div>
 
-                  <div id="email-again-field" class="inputbox">
+                  <div
+                    id="email-again-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/envelope.svg"
                       alt="envelope icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_email2"
@@ -132,7 +148,9 @@
                       name="email2"
                       placeholder="Email (again)"
                     />
-                    <label for="id_email2" class="fw-bold"
+                    <label
+                      for="id_email2"
+                      class="fw-bold position-absolute w-100"
                       >Email (again)<img
                         src="/form3/img/asterisk.svg"
                         alt="asterisk"
@@ -142,13 +160,16 @@
                     /></label>
                   </div>
 
-                  <div id="first-name-field" class="inputbox">
+                  <div
+                    id="first-name-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/user.svg"
                       alt="user icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_firstname"
@@ -156,7 +177,9 @@
                       name="firstname"
                       placeholder="First name"
                     />
-                    <label for="id_firstname" class="fw-bold"
+                    <label
+                      for="id_firstname"
+                      class="fw-bold position-absolute w-100"
                       >First name<img
                         src="/form3/img/asterisk.svg"
                         alt="asterisk"
@@ -166,13 +189,16 @@
                     /></label>
                   </div>
 
-                  <div id="last-name-field" class="inputbox">
+                  <div
+                    id="last-name-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/user.svg"
                       alt="user icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_lastname"
@@ -180,7 +206,9 @@
                       name="lastname"
                       placeholder="Last name"
                     />
-                    <label for="id_lastname" class="fw-bold"
+                    <label
+                      for="id_lastname"
+                      class="fw-bold position-absolute w-100"
                       >Last name<img
                         src="/form3/img/asterisk.svg"
                         alt="asterisk"
@@ -190,13 +218,16 @@
                     /></label>
                   </div>
 
-                  <div id="city-field" class="inputbox">
+                  <div
+                    id="city-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/house.svg"
                       alt="house icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_city"
@@ -204,16 +235,21 @@
                       name="city"
                       placeholder="City/town"
                     />
-                    <label for="id_city" class="fw-bold">City/town </label>
+                    <label for="id_city" class="fw-bold position-absolute w-100"
+                      >City/town
+                    </label>
                   </div>
 
-                  <div id="country-field" class="inputbox">
+                  <div
+                    id="country-field"
+                    class="inputbox-custom position-relative"
+                  >
                     <img
                       src="/form3/img/globe.svg"
                       alt="globe icon"
                       width="20"
                       height="20"
-                      class="icon"
+                      class="icon position-absolute"
                     />
                     <input
                       id="id_country"
@@ -221,7 +257,11 @@
                       name="country"
                       placeholder="Country"
                     />
-                    <label for="id_country" class="fw-bold">Country</label>
+                    <label
+                      for="id_country"
+                      class="fw-bold position-absolute w-100"
+                      >Country</label
+                    >
                   </div>
 
                   <div class="pb-3">
