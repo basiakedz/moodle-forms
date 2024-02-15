@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
       invalidInputEl.classList.remove("is-invalid");
     }
 
+    for (const iconEl of Array.from(document.getElementsByClassName("icon"))) {
+      iconEl.style.display = "block";
+    }
+
     const userName = formData.get("username");
 
     if (!userName) {
