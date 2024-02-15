@@ -121,3 +121,10 @@ input:placeholder-shown:not(:focus) ~ label {
   background-position: 97% 50% !important;
   background-size: 16px !important;
 }
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 0px 1000px #6878ac inset;
+  border-radius: 5px;
+  margin-top: 5px;
+}
