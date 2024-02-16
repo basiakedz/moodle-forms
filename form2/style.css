@@ -76,7 +76,7 @@ body {
 .is-invalid {
   border-color: #f98012 !important;
   border-width: 2px;
-  background-image: url(/form2/exclamation-orange.svg) !important;
+  background-image: url(/form2/img/exclamation-orange.svg) !important;
 }
 
 @keyframes borderAnimation {
