@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   function createSnowflake() {
     const snowflake = $(
-      '<img class="snowflake" src="snowflake.png" alt="Snowflake" />'
+      '<img class="snowflake" src="img/snowflake.png" alt="Snowflake" />'
     );
     const startPositionLeft = Math.random() * $(window).width();
     snowflake.css({
