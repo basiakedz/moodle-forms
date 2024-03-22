@@ -21,29 +21,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body class="vh-100 d-flex align-items-center justify-content-center">
+  <body class="min-vh-100">
     <main>
-      <div
-        class="container-md d-flex justify-content-center align-items-center"
-      >
-        <div
-          class="form-container z-2 rounded-5 p-4 mx-5 d-flex justify-content-center align-items-center"
-        >
-          <form action="" method="post" novalidate>
-            <div class="row text-center">
-              <div class="col-12">
-                <h1 class="mt-0 mb-2">New account</h1>
-              </div>
-            </div>
-
-            <div class="custom-inputs-container">
-              <div class="row">
-                <div class="col-12 col-md-6">
+      <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+            <div class="card form-container z-2 rounded-4 d-flex flex-column">
+              <form
+                action=""
+                method="post"
+                novalidate
+                class="card-body d-flex flex-column h-100 overflow-y-auto p-4"
+              >
+                <div class="text-center pt-1">
+                  <img
+                    src="/form1/img/Moodle_Circle_M_Reversed_White_RGB.png"
+                    alt="Moodle Logo"
+                    class="h-auto logo-custom"
+                  />
+                  <h1 class="fw-bold mt-4 mb-3">New account</h1>
+                </div>
+                <div class="custom-inputs-container">
                   <div id="user-name-field">
                     <label for="id_username" class="pb-1 mt-4"
                       >Username<img
@@ -57,12 +60,10 @@
                       id="id_username"
                       type="text"
                       name="username"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6">
                   <div id="password-field">
                     <label for="id_password" class="pb-1 mt-4"
                       >Password
@@ -77,14 +78,10 @@
                       id="id_password"
                       type="password"
                       name="password"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-12 col-md-6">
                   <div id="email-field">
                     <label for="id_email" class="pb-1 mt-4"
                       >Email address<img
@@ -98,12 +95,10 @@
                       id="id_email"
                       type="email"
                       name="email"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6">
                   <div id="email-again-field">
                     <label for="id_email2" class="pb-1 mt-4"
                       >Email (again)
@@ -118,14 +113,10 @@
                       id="id_email2"
                       type="email"
                       name="email2"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-12 col-md-6">
                   <div id="first-name-field">
                     <label for="id_firstname" class="pb-1 mt-4"
                       >First name
@@ -140,12 +131,10 @@
                       id="id_firstname"
                       type="text"
                       name="firstname"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6">
                   <div id="last-name-field">
                     <label for="id_lastname" class="pb-1 mt-4"
                       >Last name
@@ -160,68 +149,66 @@
                       id="id_lastname"
                       type="text"
                       name="lastname"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-12 col-md-6">
                   <div id="city-field">
                     <label for="id_city" class="pb-1 mt-4">City/town </label>
                     <input
                       id="id_city"
                       type="text"
                       name="city"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6">
                   <div id="country-field">
                     <label for="id_country" class="pb-1 mt-4">Country</label>
                     <input
                       id="id_country"
                       type="text"
                       name="country"
-                      class="form-control mb-1"
+                      class="form-control"
                     />
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="d-flex pt-4 mt-3 pb-2 custom-button-container">
-              <input
-                id="id_submitbutton"
-                type="submit"
-                name="submitbutton"
-                value="Create my new account"
-                class="btn btn-primary border-0 me-2"
-              />
-              <input
-                id="id_cancel"
-                type="submit"
-                name="cancel"
-                value="Cancel"
-                class="btn btn-secondary border-0"
-              />
-            </div>
+                <div>
+                  <div
+                    class="d-flex flex-column flex-sm-row pt-4 mt-3 pb-2 custom-button-container"
+                  >
+                    <input
+                      id="id_submitbutton"
+                      type="submit"
+                      name="submitbutton"
+                      value="Create my new account"
+                      class="btn btn-primary border-0 me-sm-2 mb-2 mb-sm-0"
+                    />
+                    <input
+                      id="id_cancel"
+                      type="submit"
+                      name="cancel"
+                      value="Cancel"
+                      class="btn btn-secondary border-0"
+                    />
+                  </div>
 
-            <div class="pt-1">
-              <p class="custom-required-text mb-3">
-                <img
-                  src="/form1/img/exclamation.svg"
-                  alt="exclamation"
-                  width="12"
-                  height="12"
-                  class="me-1 mb-1"
-                />Required
-              </p>
+                  <div class="pt-1">
+                    <p class="custom-required-text mb-3">
+                      <img
+                        src="/form1/img/exclamation.svg"
+                        alt="exclamation"
+                        width="12"
+                        height="12"
+                        class="me-1 mb-1"
+                      />Required
+                    </p>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </main>
