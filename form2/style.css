@@ -1,6 +1,7 @@
 body {
   background-color: #e4e8f6;
   font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   color: #282828;
 }
 
@@ -70,7 +71,7 @@ body {
 .error-message {
   color: #f98012;
   font-size: 12px;
-  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .is-invalid {
