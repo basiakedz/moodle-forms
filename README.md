@@ -4,15 +4,15 @@ Three Moodle forms utilize the latest version 5.3 of Bootstrap and feature speci
 
 ### Overview
 
-These three Moodle forms, designed to facilitate account creation for full access to Moodle. They integrates HTML, CSS, Bootstrap, JavaScript and jQuery to deliver a user-friendly forms with validation and a pleasant user experience.
+These three Moodle forms are designed to facilitate account creation for full access to Moodle. They integrate HTML, CSS, Bootstrap, JavaScript, and jQuery to deliver user-friendly forms with validation and a pleasant user experience.
 
 ### Link
 
-- Live preview Form3: []()
+- Live preview Form3: [https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form3/](https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form3/)
 
-- Live preview Form2: []()
+- Live preview Form2: [https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form2/](https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form2/)
 
-- Live preview Form1: []()
+- Live preview Form1: [https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form1/](https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form1/)
 
 ### Built with
 
@@ -26,7 +26,7 @@ These three Moodle forms, designed to facilitate account creation for full acces
 
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in a web browser.
-3. Fill out the form with your username, password, email address, first name, last name, city and country.
+3. Fill out the form with your username, password, email address, first name, last name, city, and country.
 4. Click the "Create my new account" button to submit the form.
 
 ### Form3
