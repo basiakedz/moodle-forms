@@ -1,4 +1,4 @@
-# Moodle forms ![Moodle Form icon](/logo-32x32.png)
+# Moodle forms - commercial project ![Moodle Form icon](/logo-32x32.png)
 
 Three Moodle forms utilize the latest version 5.3 of Bootstrap and feature special animations implemented using jQuery or CSS. The forms were developed based on my own designs crafted in Figma.
 
