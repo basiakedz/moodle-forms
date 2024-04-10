@@ -29,14 +29,14 @@ These three Moodle forms are designed to facilitate account creation for full ac
 3. Fill out the form with your username, password, email address, first name, last name, city, and country.
 4. Click the "Create my new account" button to submit the form.
 
-### Form3
+### Glassmorphism form
 
 ![Glassmorphism form Screenshot](./form3/img/screenshot_form3.png)
 
-### Form2
+### Basic form
 
 ![Basic form Screenshot](./form2/img/screenshot_form2.png)
 
-### Form1
+### Winter form
 
 ![Winter form Screenshot](./form1/img/screenshot_form1.png)
