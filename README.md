@@ -8,11 +8,11 @@ These three Moodle forms are designed to facilitate account creation for full ac
 
 ### Links - live preview
 
-- Glassmorphism form: [https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form3/](https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form3/)
+- Glassmorphism form: [https://moodle-forms-basiakedz.netlify.app/form3/](https://moodle-forms-basiakedz.netlify.app/form3/)
 
-- Basic form: [https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form2/](https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form2/)
+- Basic form: [https://moodle-forms-basiakedz.netlify.app/form2/](https://moodle-forms-basiakedz.netlify.app/form2/)
 
-- Winter form: [https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form1/](https://65ff28c43840ca3de0d9af87--moodle-forms-basiakedz.netlify.app/form1/)
+- Winter form: [https://moodle-forms-basiakedz.netlify.app/form1/](https://moodle-forms-basiakedz.netlify.app/form1/)
 
 ### Built with
 
